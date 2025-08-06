@@ -32,6 +32,25 @@ OpenWrt上的打印软件包移植，包括：
 
 使用方法：
 git clone --depth=1 https://gitee.com/master0123/openwrt-printing-packages package/openwrt-printing-packages
+
+## 📌如何编译？
+
+### 方法1：
+
+执行 `./scripts/feeds update -a` 操作前，在 `feeds.conf.default` **顶部**插入如下代码：
+
+```
+src-git printing-packages https://gitee.com/master0123/openwrt-printing-packages.git;master
+```
+
+### 方法2：
+
+在 `./scripts/feeds install -a` 操作完成后，执行以下命令：
+
+```shell
+git clone --depth=1 https://gitee.com/master0123/openwrt-printing-packages package/printing-packages
+```
+
 以上软件包未经严谨测试，请谨慎使用。
 
 --------------------------------------------
