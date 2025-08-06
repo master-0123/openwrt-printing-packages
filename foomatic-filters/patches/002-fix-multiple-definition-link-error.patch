@@ -1,0 +1,32 @@
+--- a/foomaticrip.c	2013-11-09 23:42:51.000000000 +0800
++++ b/foomaticrip.c	2025-07-31 21:33:52.710969053 +0800
+@@ -109,7 +109,7 @@
+ }
+ 
+ 
+-dstr_t *postpipe;  /* command into which the output of this filter should be piped */
++extern dstr_t *postpipe;  /* command into which the output of this filter should be piped */
+ FILE *postpipe_fh = NULL;
+ 
+ FILE * open_postpipe()
+
+--- a/options.c	2013-11-09 23:42:51.000000000 +0800
++++ b/options.c	2025-07-31 21:34:37.746543907 +0800
+@@ -38,7 +38,7 @@
+ } icc_mapping_entry_t;
+ 
+ /* Values from foomatic keywords in the ppd file */
+-char printer_model [256];
++extern char printer_model [256];
+ char printer_id [256];
+ char driver [128];
+ char cmd [4096];
+@@ -46,7 +46,7 @@
+ dstr_t *postpipe = NULL;  /* command into which the output of this
+                              filter should be piped */
+ int ps_accounting = 1;
+-char cupsfilter [256];
++extern char cupsfilter [256];
+ int jobentitymaxlen = 0;
+ int userentitymaxlen = 0;
+ int hostentitymaxlen = 0;

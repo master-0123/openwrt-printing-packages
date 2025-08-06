@@ -1,0 +1,21 @@
+diff -Nuar a/Makefile.in b/Makefile.in
+--- a/Makefile.in	2025-02-19 06:48:09.000000000 +0800
++++ b/Makefile.in	2025-08-05 22:51:07.843782253 +0800
+@@ -1056,10 +1056,13 @@
+ 	$(LCMS_LIBS) $(LIBQPDF_LIBS) $(LIBJPEG_LIBS) $(EXIF_LIBS) \
+ 	$(LIBPNG_LIBS) $(TIFF_LIBS) -lm $(am__append_1) \
+ 	$(am__append_3)
+-libcupsfilters_la_CFLAGS = -I$(srcdir)/cupsfilters/fontembed/ \
+-	$(FONTCONFIG_CFLAGS) $(CUPS_CFLAGS) $(LCMS_CFLAGS) \
+-	$(LIBQPDF_CFLAGS) $(LIBJPEG_CFLAGS) $(EXIF_CFLAGS) \
+-	$(LIBPNG_CFLAGS) $(TIFF_CFLAGS) $(am__append_2)
++libcupsfilters_la_CFLAGS = \
++	$(filter-out -I/usr/include, \
++		-I$(srcdir)/cupsfilters/fontembed/ \
++		$(FONTCONFIG_CFLAGS) $(CUPS_CFLAGS) $(LCMS_CFLAGS) \
++		$(LIBQPDF_CFLAGS) $(LIBJPEG_CFLAGS) $(EXIF_CFLAGS) \
++		$(LIBPNG_CFLAGS) $(TIFF_CFLAGS) $(am__append_2) \
++	)
+ libcupsfilters_la_LDFLAGS = \
+ 	-no-undefined \
+ 	-version-info 2

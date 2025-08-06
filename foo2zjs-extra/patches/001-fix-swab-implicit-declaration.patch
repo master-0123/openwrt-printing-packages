@@ -1,0 +1,29 @@
+--- a/icc2ps/lcms.h	2021-04-26 15:46:47.000000000 +0800
++++ b/icc2ps/lcms.h	2025-07-29 21:29:31.223603430 +0800
+@@ -181,9 +181,9 @@
+ 
+ #include <string.h>
+ 
+-#if defined(__GNUC__) || defined(__FreeBSD__)
+-#   include <unistd.h>
+-#endif
++
++#include <unistd.h>
++
+ 
+ #ifndef LCMS_WIN_TYPES_ALREADY_DEFINED
+ 
+--- a/icc2ps/cmsio1.c	2021-04-26 15:46:47.000000000 +0800
++++ b/icc2ps/cmsio1.c	2025-07-29 22:22:02.130935272 +0800
+@@ -36,9 +36,9 @@
+ static int GlobalCountryCode;
+ 
+                            
+-#ifdef __BEOS__
++
+ #       define USE_CUSTOM_SWAB  1
+-#endif
++
+ 
+ 
+ #ifdef USE_CUSTOM_SWAB

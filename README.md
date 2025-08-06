@@ -30,8 +30,8 @@ OpenWrt上的打印软件包移植，包括：
 - hplip 3.18.6
   HP官方打印机驱动，最后一个能自编译支持全平台的驱动，后期版本内prnt/libImageProcessor.so只有x86和arm二进制文件，不开源；安装后还需要安装hplip-3.18.6-plugin，这个里面只有x86和arm的二进制文件，需要python支持，太麻烦懒得测试了
 
-
-git clone --depth=1 https://github.com/xiaorouji/openwrt-printing-packages package/openwrt-printing-packages
+使用方法：
+git clone --depth=1 https://gitee.com/master0123/openwrt-printing-packages package/openwrt-printing-packages
 以上软件包未经严谨测试，请谨慎使用。
 
 --------------------------------------------
