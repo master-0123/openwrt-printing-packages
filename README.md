@@ -1,6 +1,7 @@
-# Printing packages for OpenWrt
+[**[中文]**](README.md) [**[English]**](README-en.md)
+# OpenWrt的打印软件包
 
-OpenWrt上的打印软件包移植，包括：
+包括：
 
 - Cups 2.4.12							  5MB
   Linux通用打印服务
@@ -22,14 +23,10 @@ OpenWrt上的打印软件包移植，包括：
   PDF处理软件， 很多开源打印驱动依赖
 - ghostscript-fonts-std    					 3.8MB
 - lcms2 2.17 								375kB
-- Cairo 1.17.4
+- Cairo 1.18.4
 - libjbigkit 2.1
-- libpcre 8.41
 - poppler 0.90.0
 - qpdf 12.2.0
-- hplip 3.18.6
-  HP官方打印机驱动，最后一个能自编译支持全平台的驱动，后期版本内prnt/libImageProcessor.so只有x86和arm二进制文件，不开源；安装后还需要安装hplip-3.18.6-plugin，这个里面只有x86和arm的二进制文件，需要python支持，太麻烦懒得测试了
-
 
 ## 📌如何编译？
 
