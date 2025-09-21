@@ -43,13 +43,15 @@ src-git printing-packages https://gitee.com/master0123/openwrt-printing-packages
 After executing `./scripts/feeds install -a`, run the following command:
 
 ```shell
-git clone --depth=1 https://gitee.com/master0123/openwrt-printing-packages package/printing-packages
+git clone --depth=1 https://github.com/master-0123/openwrt-printing-packages package/printing-packages
 ```
 
 The above software packages have not undergone rigorous testing. Please use them with caution.
 
 --------------------------------------------
+
 Acknowledgments
+
 https://github.com/SoPudge/lede-cups
 https://github.com/obanat/openwrt-printing-packages
 https://github.com/mengtw123/openwrt-printing-packages
