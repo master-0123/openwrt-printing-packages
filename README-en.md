@@ -46,6 +46,9 @@ After executing `./scripts/feeds install -a`, run the following command:
 git clone --depth=1 https://github.com/master-0123/openwrt-printing-packages package/printing-packages
 ```
 
+### Note:
+
+To compile Ghostscript, the host system must have the cups and libcups2-dev packages installed.
 The above software packages have not undergone rigorous testing. Please use them with caution.
 
 --------------------------------------------
@@ -53,6 +56,9 @@ The above software packages have not undergone rigorous testing. Please use them
 Acknowledgments
 
 https://github.com/SoPudge/lede-cups
+
 https://github.com/obanat/openwrt-printing-packages
+
 https://github.com/mengtw123/openwrt-printing-packages
+
 https://github.com/jastheace/openwrt-printing-packages

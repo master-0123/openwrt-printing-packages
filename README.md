@@ -46,6 +46,10 @@ src-git printing-packages https://gitee.com/master0123/openwrt-printing-packages
 git clone --depth=1 https://github.com/master-0123/openwrt-printing-packages package/printing-packages
 ```
 
+### 注意：
+
+编译Ghostscript需要主机安装软件包cups和libcups2-dev。
+
 以上软件包未经严谨测试，请谨慎使用。
 
 --------------------------------------------
@@ -53,6 +57,9 @@ git clone --depth=1 https://github.com/master-0123/openwrt-printing-packages pac
 致谢
 
 https://github.com/SoPudge/lede-cups
+
 https://github.com/obanat/openwrt-printing-packages
+
 https://github.com/mengtw123/openwrt-printing-packages
+
 https://github.com/jastheace/openwrt-printing-packages

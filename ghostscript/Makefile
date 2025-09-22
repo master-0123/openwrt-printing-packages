@@ -47,7 +47,7 @@ define Build/Configure
 	--without-libidn \
 	--without-x \
 	--with-jbig2dec \
-	--with-install-cups \
+	--enable-cups \
 	--with-fontpath /usr/share/fonts/ghostscript/fonts/:/usr/share/ghostscript/10.4.0/Resource/Font/:/usr/share/fonts/default/ghostscript/:/usr/share/fonts/default/TrueType/:/usr/share/fonts/default/Type1:/usr/share/cups/fonts/:/usr/share/fonts/:/usr/share/fonts/ubuntu/:/usr/share/fonts/truetype/liberation/ \
 	--with-cups-serverbin="/usr/lib/cups" \
 	--with-cups-serverroot="/etc/cups" \
