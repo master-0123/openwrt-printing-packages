@@ -1,0 +1,12 @@
+--- a/lib/epson-escpr-api.h	2023-02-15 10:57:29.000000000 +0800
++++ b/lib/epson-escpr-api.h	2025-09-22 22:39:52.198373450 +0800
+@@ -93,6 +93,9 @@
+ extern EPS_ERR_CODE epsGetStatus         (EPS_STATUS*                                   );
+ extern EPS_ERR_CODE epsGetInkInfo        (EPS_INK_INFO*                                 );
+ extern EPS_ERR_CODE epsGetSupplyInfo     (EPS_SUPPLY_INFO*                              );
++extern EPS_ERR_CODE SetupJobAttrib          (const EPS_JOB_ATTRIB*                      );
++extern EPS_ERR_CODE SendStartJob			(EPS_BOOL                                   );
++extern EPS_ERR_CODE PrintBand               (const EPS_UINT8*, EPS_UINT32, EPS_UINT32*  );
+ 
+     /*** Get Supported Media Function                                                   */
+     /*** -------------------------------------------------------------------------------*/

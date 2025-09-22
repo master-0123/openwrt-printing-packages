@@ -62,7 +62,12 @@ define Build/Prepare
 		echo "Warning: Unexpected directory structure after extraction."; \
 	fi
 
-	$(call PatchDir,$(PKG_BUILD_DIR),$(PATCH_DIR))
+	echo "Applying patches from $(PATCH_DIR)..."
+	$(call PatchDir,$(PKG_BUILD_DIR),$(PATCH_DIR)) || { \
+		echo "Patch application failed"; \
+		exit 1; \
+	}
+	echo "Patches applied successfully"
 endef
 
 # 配置编译选项
