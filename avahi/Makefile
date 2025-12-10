@@ -247,7 +247,6 @@ CONFIGURE_ARGS += \
 	--disable-qt5 \
 	--disable-gtk \
 	--disable-gtk3 \
-	--enable-dbus \
 	--disable-dbm \
 	--enable-gdbm \
 	--enable-libdaemon \
@@ -300,7 +299,7 @@ endef
 
 define Package/libavahi/install
 	$(INSTALL_DIR) $(1)/usr/lib
-	$(CP) $(PKG_INSTALL_DIR)/usr/lib/libavahi-{common,core,client}.so.* $(1)/usr/lib/
+	$(CP) $(PKG_INSTALL_DIR)/usr/lib/libavahi-{common,core}.so.* $(1)/usr/lib/
 endef
 
 define Package/libavahi-dbus-support/install
